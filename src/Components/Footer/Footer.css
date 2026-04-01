@@ -1,84 +1,160 @@
+/* General Footer Styling */
 .footer {
-  margin: 50px 170px;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  padding: 50px 170px 20px 170px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the main sections (Summary, Links, Contact, Tech) */
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Space out the main sections */
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+/* General style for all main sections */
+.footer-section {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  color: #c9c9c9; /* Lighter text color */
 }
 
-.footer-top {
+/* Logo/Name in Summary section */
+.summary-logo {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Description text */
+.summary-description {
+  max-width: 300px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Social media icons placeholder */
+.summary-social {
   display: flex;
-  justify-content: space-between;
+  gap: 15px;
 }
 
-.footer-top-left p {
-  font-size: 20px;
-  max-width: 400px;
-}
-
-.footer-top-right {
+.social-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #df8908;
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  gap: 35px;
-}
-
-.footer-email-input {
-  display: flex;
-  gap: 30px;
-  padding: 20px 30px;
-  border-radius: 30px;
-  background: #32323b;
-  padding-right: 80px;
-}
-
-.footer-email-input input {
-  outline: none;
-  border: none;
-  background: transparent;
-  color: #a0a0a0;
-  font-family: Outfit;
-  font-size: 18px;
-}
-
-.footer-email-input:hover {
-  border: 2px solid white;
-}
-.footer-subscribe {
-  font-size: 20px;
-  padding: 22px 50px;
-  border-radius: 50px;
-  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+  justify-content: center;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.footer-subscribe:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
+/* Styling for Links and Contact headers */
+.footer-links h3,
+.footer-contact h3,
+.footer-tech h3 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
+/* Styling for ul/li in Links and Contact */
+.footer-links ul,
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #c9c9c9;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #df8908;
+}
+.footer-links li,
+.footer-contact li {
+  cursor: pointer;
+}
+
+/* Technologies Section */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 250px;
+}
+
+.tech-tag {
+  background-color: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* Divider line */
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background-color: white;
+  margin: 0 0 20px 0;
+}
+
+/* Bottom Copyright Bar */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 14px;
+  color: #c9c9c9;
 }
 
-.footer-bottom-right {
-  display: flex;
-  gap: 50px;
-  margin-bottom: 50px;
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 1200px) {
+  .footer {
+    padding: 40px 100px 20px 100px;
+  }
 }
 
 @media (max-width: 768px) {
   .footer {
-    margin: 50px 70px;
+    /* Less padding on smaller screens */
+    padding: 30px 20px 15px 20px;
   }
-  .footer-top {
+  .footer-content {
+    /* Stack sections vertically */
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
+  }
+  .summary-description {
+    /* Allow description to use more screen width */
+    max-width: 100%;
+  }
+  /* Remove the padding from the right-most section on mobile */
+  .footer-tech {
+    padding-right: 0;
   }
   .footer-bottom {
-    display: flex;
+    /* Stack bottom items vertically and reverse them */
     flex-direction: column-reverse;
-    margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .footer-credit {
+    margin-bottom: 10px;
   }
 }

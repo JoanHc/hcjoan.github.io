@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import mail_icon from "../../assets/mail_icon.svg";
+import { FaPaperPlane } from "react-icons/fa";
 import location_icon from "../../assets/location_icon.svg";
 import call_icon from "../../assets/call_icon.svg";
 const Contact = () => {
@@ -63,7 +64,6 @@ const Contact = () => {
       <div className="contact-section">
         <div className="contact-left">
           <h1>Let's talk</h1>
-          <p>iiibibibnjnjn</p>
           <div className="contact-details">
             <div className="conact-detail">
               <img src={mail_icon} alt="" />{" "}
@@ -89,7 +89,7 @@ const Contact = () => {
             placeholder="Enter your message"
           ></textarea>
           <button type="submit" className="contact-submit">
-            Submit
+            <FaPaperPlane /> Submit
           </button>
         </form>
       </div>

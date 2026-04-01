@@ -104,10 +104,10 @@
 .contact-submit {
   border: none;
   color: white;
-  border-radius: 50px;
+  border-radius: 20px;
   background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
   padding: 20px 60px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   cursor: pointer;
   transition: 0.3s;
 }

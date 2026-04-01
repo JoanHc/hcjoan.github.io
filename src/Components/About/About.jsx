@@ -1,61 +1,81 @@
 import React from "react";
 import "./About.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
-import profile_img from "../../assets/about_profile.svg";
+import profile_img from "../../assets/joan_1.jpeg";
+
+//  Datos externalizados (Mejora: ¡No repitas código!)
+const skillsData = [
+  { name: "HTML & CSS", level: 50 },
+  { name: "Tailwind ", level: 40 },
+  { name: "React JS", level: 65 },
+  { name: "Vue JS", level: 30 },
+];
+
+const achievementsData = [
+  { count: "1+", label: "AÑOS DE EXPERIENCIA" },
+  { count: "6+", label: "PROYECTOS COMPLETADOS" },
+  { count: "1", label: "CLIENTE SATISFECHO" },
+];
+
 const About = () => {
   return (
-    <div id="about" className="about">
+    <section id="about" className="about">
       <div className="about-title">
         <h1>About me</h1>
-        <img src={theme_pattern} alt="" />
+        <img src={theme_pattern} alt="Patrón de decoración" />
       </div>
+
       <div className="about-section">
         <div className="about-left">
-          <img src={profile_img} alt="" />
+          <img src={profile_img} alt="Foto de perfil" />
         </div>
+
         <div className="about-right">
           <div className="about-para">
+            {/*Contenido del párrafo actualizado para un portafolio personal */}
             <p>
-              Create a great news website with our newspaper WordPress template.
-              This bestseller theme is perfect for blogging and excellent for
-              e-commerce, shop, store, WooCommerce, news, newspaper, magazine,
-              publishing, or review site.
+              Desarrollador Front-End con pasión por la creación de aplicaciones
+              web intuitivas, eficientes y de alto rendimiento. Enfocado en el
+              desarrollo de soluciones robustas y escalables, aplicando las
+              mejores prácticas del sector para garantizar experiencias
+              digitales de calidad, optimizadas para el usuario y el
+              rendimiento.
             </p>
-            <p>Pasion</p>
+            <p>
+              Me destaco por mi capacidad de colaboración en equipo y por mi
+              pasión por transformar diseños atractivos en experiencias
+              digitales funcionales y código limpio.
+            </p>
           </div>
+
+          {/*Habilidades: Renderizado dinámico con .map() */}
           <div className="about-skills">
-            <div className="about-skill">
-              <p>HTML & CSS</p>
-              <hr style={{ width: "50%" }} />
-            </div>
-            <div className="about-skill">
-              <p>React JS</p>
-              <hr style={{ width: "65%" }} />
-            </div>
-            <div className="about-skill">
-              <p>Vue JS</p>
-              <hr style={{ width: "45%" }} />
-            </div>
+            {skillsData.map((skill, index) => (
+              <div key={index} className="about-skill">
+                <p>{skill.name}</p>
+                {/* Estilo dinámico para el ancho de la barra de progreso */}
+                <hr style={{ width: `${skill.level}%` }} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
+
+      {/* Logros: Renderizado dinámico con .map() */}
       <div className="about-achievements">
-        <div className="about-achievement">
-          <h1>1+</h1>
-          <p>YEARS OF EXPERIENCE</p>
-        </div>
-        <hr />
-        <div className="about-achievement">
-          <h1>6+</h1>
-          <p>PROYECT COMPLETED</p>
-        </div>
-        <hr />
-        <div className="about-achievement">
-          <h1>1</h1>
-          <p>HAPPY CLIENT</p>
-        </div>
+        {achievementsData.map((achievement, index) => (
+          // El separador <hr> se elimina aquí para un diseño más moderno y se maneja con el grid/flex de CSS
+          <React.Fragment key={index}>
+            <div className="about-achievement">
+              <h1>{achievement.count}</h1>
+              <p>{achievement.label}</p>
+            </div>
+            {/* Si no es el último logro, inserta el separador visual que estaba en el CSS */}
+            {index < achievementsData.length - 1 && <hr />}
+          </React.Fragment>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

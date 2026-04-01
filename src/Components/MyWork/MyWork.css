@@ -1,3 +1,4 @@
+/* Estilos principales - Mantenidos o ligeramente ajustados */
 .mywork {
   display: flex;
   flex-direction: column;
@@ -23,28 +24,132 @@
   z-index: -1;
 }
 
+/* --- ESTILOS DE LA TARJETA DEL PROYECTO --- */
+
 .mywork-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 }
 
-.mywork-container img {
+/* Estilo de la tarjeta individual (el contenedor de cada proyecto) */
+.mywork-card {
   box-sizing: border-box;
   width: 419px;
-  height: 280px;
-  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a; /* Fondo oscuro */
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
+  border: 1px solid #333;
 }
 
-.mywork-container img:hover {
-  transform: scale(1.1);
-  border: 4px solid #ff00ff;
-  border-radius: 10px;
-  transition: 0.3s;
+.mywork-card:hover {
+  transform: translateY(-5px); /* Pequeña elevación */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  border: 2px solid #b415ff; /* Borde de color de acento */
 }
 
+.mywork-card-img {
+  width: 100%;
+  height: 250px; /* Altura fija para las miniaturas */
+  object-fit: cover;
+  border-bottom: 1px solid #333;
+}
+
+.mywork-card-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
+}
+
+.mywork-card-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+
+.mywork-card-description {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #ccc;
+  min-height: 70px; /* Asegura un mínimo de altura para consistencia */
+}
+
+/* Estilo para las etiquetas de tecnología */
+.mywork-card-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.tech-tag {
+  background-color: #333;
+  color: #c9c9c9; /* Texto claro */
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #444;
+}
+
+/* Estilos para los enlaces/botones */
+.mywork-card-links {
+  display: flex;
+  gap: 15px;
+  margin-top: auto; /* Empuja los botones al final */
+  padding-top: 10px;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s, border-color 0.3s;
+  flex-grow: 1; /* Permite que ambos crezcan para llenar el espacio */
+  justify-content: center;
+}
+
+.link-icon {
+  font-size: 18px;
+}
+
+.demo-button {
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  color: white;
+  border: 2px solid #ff00ff;
+}
+
+.demo-button:hover {
+  background-color: #cc00cc;
+  border-color: #cc00cc;
+}
+
+.repo-button {
+  background-color: transparent;
+  color: #ccc;
+  border: 2px solid #555;
+}
+
+.repo-button:hover {
+  background-color: #333;
+  border-color: #b415ff;
+  color: #b415ff;
+}
+
+/* Estilos del 'Show More' */
 .mywork-showmore {
+  /* ... (Mantén tus estilos originales para showmore) ... */
   display: flex;
   gap: 15px;
   border-radius: 50px;
@@ -62,6 +167,8 @@
   transition: 0.6s;
 }
 
+/* --- MEDIA QUERIES (Adaptación a móviles) --- */
+
 @media (max-width: 768px) {
   .mywork {
     gap: 50px;
@@ -77,18 +184,38 @@
     width: 130px;
     margin-right: -20px;
   }
+
+  /* Tarjetas en columna */
   .mywork-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
   }
-  .mywork-container img {
+
+  .mywork-card {
     width: 100%;
-    height: 100%;
   }
+
+  .mywork-card-img {
+    height: auto;
+  }
+
+  .mywork-card-description {
+    min-height: auto; /* Desactivar altura mínima en móvil */
+  }
+
+  /* Botones más pequeños en móvil */
+  .link-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .link-icon {
+    font-size: 16px;
+  }
+
   .mywork-showmore {
     padding: 20px 40px;
     font-size: 18px;
     margin: 50px auto;
-    cursor: pointer;
   }
 }
