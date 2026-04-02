@@ -13,8 +13,8 @@ const mywork_data = [
     w_description:
       "Herramienta para que pequeños negocios creen su sitio web fácilmente sin saber programar. Incluye autenticación, plantillas personalizables y almacenamiento en la nube.",
     w_tech: ["React", "HTML/CSS", "Api Gemini"],
-    w_demo_link: "https://tempath-demo.com",
-    w_repo_link: "https://github.com/enriquezss/tempath-repo",
+    w_demo_link: "https://joanhc.github.io/hcjoan.github.io/",
+    w_repo_link: "https://github.com/JoanHc/hcjoan.github.io",
   },
   {
     w_no: 2,
