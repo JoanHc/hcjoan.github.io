@@ -9,6 +9,7 @@
 
 body {
   /* Fondo oscuro moderno */
+  max-width: 1440px;
   background: #000000;
   color: #ffffff; /* Texto blanco por defecto */
   font-family:
@@ -18,9 +19,7 @@ body {
 
 /* Estilo para todos los contenedores de secciones */
 .section-container {
-  padding: 80px 10%; /* Padding global para todas las secciones */
-  max-width: 1400px;
-  margin: 0 auto;
+  padding: 80px 170px; /* Padding global para todas las secciones */
 }
 
 /* --- Para Scrollbar (Opcional, toque moderno) --- */
