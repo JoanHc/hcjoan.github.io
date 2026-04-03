@@ -266,10 +266,12 @@
   }
 
   .chatbot-popup {
-    right: 10px;
-    bottom: 70px;
-    width: 95%;
-    max-height: 80vh;
+    right: 15px; /* Separación del borde derecho */
+    bottom: 80px; /* Separación del botón toggler */
+    width: 300px; /* Ancho fijo para que parezca de PC */
+    height: 480px; /* Altura fija o relativa */
+    max-height: 70vh; /* Para que no choque con el notch en pantallas muy pequeñas */
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
   }
@@ -286,18 +288,19 @@
     margin-bottom: 0;
     flex-grow: 1;
     height: auto;
-    max-height: 400px;
-    padding: 10px;
+    padding: 15px;
+    gap: 10px;
   }
 
   .chat-body .message .message-text {
     min-width: unset;
-    font-size: 0.8rem;
     min-width: 80%;
+    font-size: 0.85rem;
   }
 
   .chat-footer {
-    padding: 10px 10px 12px;
+    position: relative;
+    padding: 10px 15px;
   }
 
   .chat-form .message-input {
