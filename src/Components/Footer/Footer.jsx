@@ -7,15 +7,14 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-content">
-        {/* --- Left Section: Summary --- */}
         <div className="footer-section footer-summary">
           <h2 className="summary-logo">Joan</h2>
           <p className="summary-description">
             Developer Fronend apasionado por crear soluciones tecnológicas
             innovadoras.
           </p>
+
           <div className="summary-social">
-            {/* Replace with actual social icons later */}
             <div className="social-icon">
               <FaLinkedin />
             </div>
@@ -63,14 +62,13 @@ const Footer = () => {
           <div className="tech-tags">
             <span className="tech-tag">JavaScript</span>
             <span className="tech-tag">Vue Js</span>
-            <span className="tech-tag">React</span>
-            <span className="tech-tag">Flutter</span>
+            <span className="tech-tag">React Js</span>
             <span className="tech-tag">Firebase</span>
+            <span className="tech-tag">Supabase</span>
             <span className="tech-tag">MySQL</span>
           </div>
         </div>
       </div>
-
       <hr className="footer-divider" />
 
       {/* --- Bottom Bar: Copyright --- */}

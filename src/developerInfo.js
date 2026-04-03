@@ -23,9 +23,9 @@ Servicios:
 - Editor de video coherentes y atractivos
 
 Tecnologías:
-- Lenguajes: Reac.js, HTML5, CSS3, HTML.
+- Lenguajes: Reac.js, HTML5, CSS3.
 - Frameworks y librerías: React.js, Redux, Bootstrap, Tailwind  .
-- Herramientas: Git, Vite, Canva, SupaBase, Vercel.
+- Herramientas: Git, Vite, Canva, SupaBase.
 
 Proyectos:
 - Portafolio interactivo personal.

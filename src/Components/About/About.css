@@ -4,7 +4,9 @@
   align-items: center;
   justify-content: center;
   gap: 80px;
-  margin: 80px 170px;
+  margin: 80px auto;
+  max-width: 1100px;
+  padding: 0 20px;
 }
 
 .about-title {
@@ -53,7 +55,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -101,7 +103,7 @@
 }
 
 .about-achievement h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
   background: linear-gradient(270deg, #df8908 50.41%, #ba41ba 90.25%);
   background-clip: text;
@@ -110,7 +112,7 @@
 }
 
 .about-achievement p {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -124,20 +126,20 @@
   transition: 0.5s;
 }
 
-/* ==================== RESPONSIVE ==================== */
+/* --- MEDIA QUERIES (Adaptación a móviles) --- */
 
 @media (max-width: 768px) {
   .about {
-    gap: 80px;
-    margin: 50px 70px;
-    align-items: start;
+    gap: 50px;
+    margin: 40px 20px;
+    align-items: center;
   }
   .about-title h1 {
-    font-size: 50px;
+    font-size: 40px;
     padding: 0;
   }
   .about-title img {
-    width: 130px;
+    width: 100px;
     right: -20px;
   }
   .about-section {
@@ -155,10 +157,10 @@
     align-items: center;
   }
   .about-skill p {
-    font-size: 20px;
+    font-size: 19px;
   }
   .about-skill hr {
-    height: 6px;
+    width: 100%;
   }
   .about-achievement {
     justify-content: space-between;
@@ -167,11 +169,11 @@
     gap: 10px;
   }
   .about-achievement h1 {
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 700;
   }
   .about-achievement p {
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
   }
 }

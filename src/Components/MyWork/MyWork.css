@@ -4,8 +4,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 80px;
-  margin: 80px 170px;
+  gap: 60px;
+  margin: 60px auto;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 .mywork-title {
   position: relative;
@@ -13,7 +15,7 @@
 
 .mywork-title h1 {
   padding: 0px 30px;
-  font-size: 80px;
+  font-size: 72px;
   font-weight: 600;
 }
 
@@ -32,29 +34,31 @@
   gap: 40px;
 }
 
-/* Estilo de la tarjeta individual (el contenedor de cada proyecto) */
 .mywork-card {
   box-sizing: border-box;
-  width: 419px;
+  max-width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  background-color: #1a1a1a; /* Fondo oscuro */
+  background-color: #1a1a1a;
   border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   cursor: pointer;
   border: 1px solid #333;
 }
 
 .mywork-card:hover {
-  transform: translateY(-5px); /* Pequeña elevación */
+  transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-  border: 2px solid #b415ff; /* Borde de color de acento */
+  border: 2px solid #b415ff;
 }
 
 .mywork-card-img {
   width: 100%;
-  height: 250px; /* Altura fija para las miniaturas */
+  height: 200px;
   object-fit: cover;
   border-bottom: 1px solid #333;
 }
@@ -63,7 +67,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   flex-grow: 1;
 }
 
@@ -74,13 +78,12 @@
 }
 
 .mywork-card-description {
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.4;
   color: #ccc;
-  min-height: 70px; /* Asegura un mínimo de altura para consistencia */
+  min-height: 70px;
 }
 
-/* Estilo para las etiquetas de tecnología */
 .mywork-card-tech {
   display: flex;
   flex-wrap: wrap;
@@ -90,19 +93,18 @@
 
 .tech-tag {
   background-color: #333;
-  color: #c9c9c9; /* Texto claro */
-  padding: 6px 10px;
+  color: #c9c9c9;
+  padding: 5px 10px;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   border: 1px solid #444;
 }
 
-/* Estilos para los enlaces/botones */
 .mywork-card-links {
   display: flex;
-  gap: 15px;
-  margin-top: auto; /* Empuja los botones al final */
+  gap: 12px;
+  margin-top: auto;
   padding-top: 10px;
 }
 
@@ -111,17 +113,19 @@
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  border-radius: 50px;
-  padding: 10px 20px;
+  border-radius: 12px;
+  padding: 8px 16px;
   font-size: 16px;
   font-weight: 500;
-  transition: background-color 0.3s, border-color 0.3s;
-  flex-grow: 1; /* Permite que ambos crezcan para llenar el espacio */
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+  flex-grow: 1;
   justify-content: center;
 }
 
 .link-icon {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .demo-button {
@@ -147,15 +151,13 @@
   color: #b415ff;
 }
 
-/* Estilos del 'Show More' */
 .mywork-showmore {
-  /* ... (Mantén tus estilos originales para showmore) ... */
   display: flex;
   gap: 15px;
   border-radius: 50px;
   border: 2px solid white;
-  padding: 30px 60px;
-  font-size: 22px;
+  padding: 25px 50px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 80px;
   transition: 0.6s;
@@ -172,17 +174,17 @@
 @media (max-width: 768px) {
   .mywork {
     gap: 50px;
-    margin: 50px 70px;
+    margin: 50px auto;
     align-items: start;
   }
   .mywork-title h1 {
     padding: 0;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
   }
   .mywork-title img {
-    width: 130px;
-    margin-right: -20px;
+    width: 100px;
+    margin-right: -10px;
   }
 
   /* Tarjetas en columna */
@@ -205,8 +207,8 @@
 
   /* Botones más pequeños en móvil */
   .link-button {
-    padding: 10px 15px;
-    font-size: 14px;
+    padding: 10px 5px;
+    font-size: 13px;
   }
 
   .link-icon {
@@ -214,8 +216,8 @@
   }
 
   .mywork-showmore {
-    padding: 20px 40px;
-    font-size: 18px;
+    padding: 15px 35px;
+    font-size: 15px;
     margin: 50px auto;
   }
 }

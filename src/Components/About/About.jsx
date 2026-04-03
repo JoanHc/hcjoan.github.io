@@ -6,7 +6,7 @@ import profile_img from "../../assets/joan_1.jpeg";
 //  Datos externalizados (Mejora: ¡No repitas código!)
 const skillsData = [
   { name: "HTML & CSS", level: 50 },
-  { name: "Tailwind ", level: 40 },
+  { name: "Tailwind ", level: 20 },
   { name: "React JS", level: 65 },
   { name: "Vue JS", level: 30 },
 ];
@@ -29,10 +29,9 @@ const About = () => {
         <div className="about-left">
           <img src={profile_img} alt="Foto de perfil" />
         </div>
-
+        {/*Contenido del párrafo actualizado para un portafolio personal */}
         <div className="about-right">
           <div className="about-para">
-            {/*Contenido del párrafo actualizado para un portafolio personal */}
             <p>
               Desarrollador Front-End con pasión por la creación de aplicaciones
               web intuitivas, eficientes y de alto rendimiento. Enfocado en el

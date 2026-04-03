@@ -27,6 +27,7 @@ const Hero = () => {
         alt="Foto de perfil de Joan Hernández"
         className="hero-profile-img"
       />
+
       <h1>
         <span>I'm Joan Hernández, </span>
         <span className="typing-wrapper">
@@ -44,12 +45,11 @@ const Hero = () => {
           />
         </span>
       </h1>
-      <p className="hero-description">
-        Apasionado por crear experiencias digitales fluidas y atractivas.
-      </p>
-      {/* NUEVA SECCIÓN: ENLACES SOCIALES */}
+
+      <p className="hero-description">Apasionado por seguir aprendiendo</p>
+
+      {/* SECCIÓN: ENLACES SOCIALES */}
       <div className="hero-social-links">
-        {/* 1. GitHub */}
         <a
           href="https://github.com/JoanHc"
           target="_blank"
@@ -59,7 +59,6 @@ const Hero = () => {
           <FaGithub className="social-icons" />
         </a>
 
-        {/* 2. LinkedIn */}
         <a
           href="https://linkedin.com/in/joanhc/"
           target="_blank"
@@ -69,15 +68,15 @@ const Hero = () => {
           <FaLinkedin className="social-icons" />
         </a>
 
-        {/* 3. Correo Electrónico */}
         <a href="mailto:joanhernandezcampero4@gmail.com" aria-label="Email">
           <MdEmail className="social-icons" />
         </a>
       </div>
+
       <div className="hero-action">
         <div className="hero-connect">
           <AnchorLink className="anchor-link" offset={50} href="#work">
-            <FaRocket style={{ marginRight: "8px" }} />
+            <FaRocket style={{ marginRight: "6px" }} />
             Proyectos
           </AnchorLink>
         </div>
@@ -86,7 +85,7 @@ const Hero = () => {
           onClick={downloadCV}
           style={{ cursor: "pointer" }}
         >
-          <FaFileDownload style={{ marginRight: "8px" }} />
+          <FaFileDownload style={{ marginRight: "6px" }} />
           Descargar CV
         </div>
       </div>

@@ -11,8 +11,8 @@ const mywork_data = [
     w_name: "Portafolio web",
     w_img: project1_img,
     w_description:
-      "Herramienta para que pequeños negocios creen su sitio web fácilmente sin saber programar. Incluye autenticación, plantillas personalizables y almacenamiento en la nube.",
-    w_tech: ["React", "HTML/CSS", "Api Gemini"],
+      "Sitio web desarrollado para mostrar mis proyectos, Incluye diseño responsive, integración con redes sociales, formulario conectado en Gmail y asistente personalizado integrando IA gemini.",
+    w_tech: ["React JS", "HTML/CSS", "APi Gemini"],
     w_demo_link: "https://joanhc.github.io/hcjoan.github.io/",
     w_repo_link: "https://github.com/JoanHc/hcjoan.github.io",
   },
@@ -22,7 +22,7 @@ const mywork_data = [
     w_img: project2_img,
     w_description:
       "Pequeño sitio web se localización de paises, mediante logeo de un usuario, permitiendo saber sus cordenadas",
-    w_tech: ["React JS", "Apis", "Hooks", "HTML/CSS"],
+    w_tech: ["React JS", "APi", "Hooks", "HTML/CSS"],
     w_demo_link: "https://tempath-demo.com",
     w_repo_link: "https://github.com/enriquezss/tempath-repo",
   },
@@ -31,8 +31,8 @@ const mywork_data = [
     w_name: "Fast pizza",
     w_img: project3_img,
     w_description:
-      "Herramienta para que pequeños negocios creen su sitio web fácilmente sin saber programar. Incluye autenticación, plantillas personalizables y almacenamiento en la nube.",
-    w_tech: ["JavaScript", "Firebase", "Cloudinary", "HTML/CSS"],
+      "Herramienta creda para un negocios de pizzas para facilitar ordenes, al mismo tiempo poder eliminar la orden.",
+    w_tech: ["React JS", "Tailwind", "Redux", "Api REST"],
     w_demo_link: "https://joanhc.github.io/",
     w_repo_link: "https://github.com/JoanHc/JoanHc.github.io",
   },

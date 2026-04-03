@@ -27,8 +27,9 @@ const Chatform = ({ chatHistory, setChatHistory, generateBotResponse }) => {
           ...history,
           { role: "model", text: "Thinking...", timestamp },
         ]),
-      600
+      600,
     );
+
     // Llamar la funcion para generar el bot response
     generateBotResponse([
       ...chatHistory,
