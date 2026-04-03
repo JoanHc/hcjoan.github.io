@@ -62,7 +62,7 @@ const Contact = () => {
               <img src={mail_icon} alt="Email" />
               <div className="detail-info">
                 <span>Email</span>
-                <p>zenrizu@gmail.com</p>
+                <p>joanhernandezcampero4@gmail.com</p>
               </div>
             </div>
 
@@ -71,7 +71,7 @@ const Contact = () => {
               <img src={call_icon} alt="Teléfono" />
               <div className="detail-info">
                 <span>Teléfono</span>
-                <p>+52 772 142 4369</p>
+                <p>+52 771 364 5293</p>
               </div>
             </div>
 
