@@ -136,11 +136,6 @@
     font-size: 36px;
   }
 
-  .services-title img {
-    width: 80px;
-    right: -10px;
-  }
-
   .services-container {
     grid-template-columns: 1fr;
   }
