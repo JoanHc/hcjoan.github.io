@@ -183,9 +183,10 @@
 
 @media (max-width: 768px) {
   .mywork {
+    align-items: center;
     gap: 50px;
     margin: 50px auto;
-    align-items: start;
+    padding: 0 20px;
   }
   .mywork-title h1 {
     padding: 0;
@@ -194,7 +195,7 @@
   }
   .mywork-title img {
     width: 120px;
-    margin-right: -10px;
+    margin-right: -20px;
   }
 
   /* Tarjetas en columna */

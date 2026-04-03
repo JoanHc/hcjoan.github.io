@@ -181,9 +181,10 @@
 
 @media (max-width: 768px) {
   .contact {
+    align-items: center;
     gap: 50px;
     margin: 50px auto;
-    align-items: start;
+    padding: 0 20px;
   }
 
   .contact-title h1 {
@@ -192,8 +193,8 @@
     font-weight: 600;
   }
   .contact-title img {
-    width: 100px;
-    margin-right: -10px;
+    width: 120px;
+    margin-right: -20px;
   }
   .contact-section {
     flex-direction: column;
@@ -233,11 +234,11 @@
 
 @media (max-width: 480px) {
   .contact-title h1 {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .contact-left h1 {
-    font-size: 34px;
+    font-size: 32px;
   }
 
   .detail-info span {
