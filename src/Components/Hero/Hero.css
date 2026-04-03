@@ -130,6 +130,26 @@ typing-wrapper {
 
 /* --- Media Query Móvil (max-width: 768px) --- */
 
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero {
+    gap: 35px;
+    padding: 60px 5%;
+  }
+  .hero h1 {
+    font-size: 45px;
+  }
+  .hero-profile-img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     gap: 30px;
@@ -141,7 +161,7 @@ typing-wrapper {
     margin-top: 30px;
   }
   .hero h1 {
-    margin-top: 30px;
+    margin-top: 36px;
     font-size: 40px;
   }
   .hero-description {
@@ -151,9 +171,9 @@ typing-wrapper {
     margin-top: 10px;
   }
   .hero-action {
-    flex-direction: column; /* Apilamos los botones verticalmente */
+    flex-direction: column;
     gap: 15px;
-    font-size: 18px;
+    width: 75%;
     font-weight: 500;
   }
   .hero-connect,
@@ -163,5 +183,20 @@ typing-wrapper {
   }
   .hero-social-links a {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero-profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-description {
+    font-size: 15px;
   }
 }

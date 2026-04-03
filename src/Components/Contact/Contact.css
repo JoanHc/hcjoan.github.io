@@ -161,6 +161,24 @@
 
 /* --- MEDIA QUERIES (Adaptación a móviles) --- */
 
+@media (max-width: 1024px) {
+  .contact {
+    padding: 0 5%;
+  }
+
+  .contact-title h1 {
+    font-size: 60px;
+  }
+
+  .contact-section {
+    gap: 40px;
+  }
+
+  .contact-left h1 {
+    font-size: 50px;
+  }
+}
+
 @media (max-width: 768px) {
   .contact {
     gap: 50px;
@@ -199,16 +217,34 @@
   .contact-right label {
     font-size: 20px;
   }
-  .contact-right input {
-    width: 100%;
-    font-size: 20px;
-  }
+  .contact-right input,
   .contact-right textarea {
-    width: 95%;
-    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
   }
   .contact-submit {
-    font-size: 15px;
-    padding: 12px 30px;
+    width: 100%;
+    justify-content: center;
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title h1 {
+    font-size: 32px;
+  }
+
+  .contact-left h1 {
+    font-size: 34px;
+  }
+
+  .detail-info span {
+    font-size: 18px;
+  }
+
+  .detail-info p {
+    font-size: 16px;
   }
 }

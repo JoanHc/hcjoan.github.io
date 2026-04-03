@@ -69,7 +69,6 @@ const About = () => {
               <h1>{achievement.count}</h1>
               <p>{achievement.label}</p>
             </div>
-            {/* Si no es el último logro, inserta el separador visual que estaba en el CSS */}
             {index < achievementsData.length - 1 && <hr />}
           </React.Fragment>
         ))}

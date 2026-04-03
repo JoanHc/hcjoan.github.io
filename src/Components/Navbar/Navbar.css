@@ -73,6 +73,15 @@
 
 /* --- MEDIA QUERIES (Adaptación a móviles) --- */
 
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 20px 50px;
+  }
+  .nav-menu {
+    gap: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     background-color: #000000;
@@ -94,9 +103,9 @@
   .nav-mob-close {
     display: block !important;
     position: absolute;
-    top: 30px;
-    left: 250px;
-    width: 30px;
+    top: 25px;
+    left: 25px;
+    width: 25px;
     cursor: pointer;
   }
 
@@ -104,14 +113,14 @@
     position: fixed;
     flex-direction: column;
     align-items: start;
-
     top: 0;
-    right: -350px;
+    right: -100px;
     gap: 30px;
+    max-width: 300px;
     background-color: rgba(31, 0, 22, 0.85);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    width: 300px;
+    width: 70%;
     height: 100vh;
     z-index: 2;
     padding-top: 80px;
@@ -130,5 +139,14 @@
   .nav-menu li p {
     color: #ffffff;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo {
+    font-size: 20px;
+  }
+  .nav-menu {
+    width: 85%;
   }
 }

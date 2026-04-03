@@ -30,7 +30,7 @@
 
 .mywork-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 40px;
 }
 
@@ -170,6 +170,16 @@
 }
 
 /* --- MEDIA QUERIES (Adaptación a móviles) --- */
+@media (max-width: 1024px) {
+  .mywork-title h1 {
+    font-size: 60px;
+  }
+
+  .mywork-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
 
 @media (max-width: 768px) {
   .mywork {
@@ -183,7 +193,7 @@
     font-weight: 600;
   }
   .mywork-title img {
-    width: 100px;
+    width: 120px;
     margin-right: -10px;
   }
 
@@ -202,7 +212,7 @@
   }
 
   .mywork-card-description {
-    min-height: auto; /* Desactivar altura mínima en móvil */
+    min-height: auto;
   }
 
   /* Botones más pequeños en móvil */
@@ -219,5 +229,22 @@
     padding: 15px 35px;
     font-size: 15px;
     margin: 50px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .mywork-title h1 {
+    font-size: 35px;
+  }
+
+  .mywork-card-links {
+    flex-direction: column;
+  }
+
+  .mywork-showmore {
+    padding: 18px 35px;
+    font-size: 16px;
+    width: 90%;
+    justify-content: center;
   }
 }

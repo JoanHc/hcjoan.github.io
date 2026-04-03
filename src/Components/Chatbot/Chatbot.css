@@ -239,3 +239,80 @@
   flex-direction: column;
   max-width: 75%;
 }
+
+/* --- MEDIA QUERIES (Adaptación a móviles) --- */
+
+@media (max-width: 768px) {
+  #chatbot-toggler {
+    bottom: 20px;
+    right: 20px;
+    height: 45px;
+    width: 45px;
+  }
+
+  .chatbot-popup {
+    right: 20px;
+    bottom: 75px;
+    width: 280px;
+    height: 450px;
+  }
+}
+
+/* 2. Móviles (max-width: 480px) */
+@media (max-width: 480px) {
+  #chatbot-toggler {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .chatbot-popup {
+    right: 10px;
+    bottom: 70px;
+    width: calc(100% - 20px);
+    max-height: 80vh;
+    border-radius: 12px;
+  }
+
+  .chat-header {
+    padding: 12px 15px;
+  }
+
+  .header-info .logo-text {
+    font-size: 1rem;
+  }
+
+  .chat-body {
+    height: 320px;
+    padding: 12px 15px;
+    gap: 12px;
+  }
+
+  .chat-body .message .message-text {
+    font-size: 0.8rem;
+    min-width: 75%;
+  }
+
+  .chat-footer {
+    padding: 10px 10px 12px;
+  }
+
+  .chat-form .message-input {
+    font-size: 0.9rem;
+    padding: 0 12px;
+  }
+
+  .chat-form button,
+  .send-btn {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-height: 500px) {
+  .chatbot-popup {
+    height: 70vh;
+  }
+  .chat-body {
+    height: 150px;
+  }
+}

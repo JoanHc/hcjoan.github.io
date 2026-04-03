@@ -1,7 +1,6 @@
 /* General Footer Styling */
 .footer {
-  background-color: rgba(0, 0, 0, 0.7);
-
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 50px 170px 20px 170px;
   color: white;
   font-family: Arial, sans-serif;
@@ -30,7 +29,7 @@
 
 /* Description text */
 .summary-description {
-  max-width: 300px;
+  max-width: 100%;
   line-height: 1.5;
   margin-bottom: 15px;
 }
@@ -125,17 +124,36 @@
 
 @media (max-width: 1200px) {
   .footer {
-    padding: 40px 100px 20px 100px;
+    padding: 50px 5% 20px 5%;
+  }
+  .footer-content {
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-section:nth-child(1) {
+    grid-column: span 2;
+    text-align: center;
+    align-items: center;
+  }
+
+  .summary-social {
+    justify-content: center;
   }
 }
 
 @media (max-width: 768px) {
   .footer {
-    /* Less padding on smaller screens */
-    padding: 30px 20px 15px 20px;
+    padding: 40px 30px 20px 30px;
   }
   .footer-content {
-    /* Stack sections vertically */
     flex-direction: column;
     gap: 30px;
   }
@@ -147,6 +165,7 @@
   .footer-tech {
     padding-right: 0;
   }
+
   .footer-bottom {
     /* Stack bottom items vertically and reverse them */
     flex-direction: column-reverse;
@@ -156,5 +175,16 @@
   }
   .footer-credit {
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .summary-logo {
+    font-size: 24px;
+  }
+  .footer-links h3,
+  .footer-contact h3,
+  .footer-tech h3 {
+    font-size: 18px;
   }
 }
