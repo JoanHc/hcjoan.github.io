@@ -114,7 +114,7 @@
     flex-direction: column;
     align-items: start;
     top: 0;
-    right: -100px;
+    right: -100%;
     gap: 30px;
     max-width: 300px;
     background-color: rgba(31, 0, 22, 0.85);
