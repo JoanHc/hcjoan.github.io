@@ -268,9 +268,10 @@
   .chatbot-popup {
     right: 10px;
     bottom: 70px;
-    width: calc(100% - 20px);
+    width: 95%;
     max-height: 80vh;
-    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
   }
 
   .chat-header {
@@ -282,14 +283,17 @@
   }
 
   .chat-body {
-    height: 320px;
-    padding: 12px 15px;
-    gap: 12px;
+    margin-bottom: 0;
+    flex-grow: 1;
+    height: auto;
+    max-height: 400px;
+    padding: 10px;
   }
 
   .chat-body .message .message-text {
+    min-width: unset;
     font-size: 0.8rem;
-    min-width: 75%;
+    min-width: 80%;
   }
 
   .chat-footer {

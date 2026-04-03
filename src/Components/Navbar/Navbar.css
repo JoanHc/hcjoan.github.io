@@ -96,8 +96,8 @@
 
   .nav-mob-open {
     display: block !important;
-    position: fixed;
-    right: 20px;
+    position: relative;
+    z-index: 10px;
   }
 
   .nav-mob-close {

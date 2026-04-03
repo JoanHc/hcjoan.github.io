@@ -16,7 +16,7 @@ const Footer = () => {
 
           <div className="summary-social">
             <div className="social-icon">
-              <FaLinkedin />
+              <FaLinkedin href="https://linkedin.com/in/joanhc/" />
             </div>
             <div className="social-icon">
               <FaGithub />
