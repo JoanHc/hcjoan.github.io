@@ -23,8 +23,8 @@ const mywork_data = [
     w_description:
       "Pequeño sitio web se localización de paises, mediante logeo de un usuario, permitiendo saber sus cordenadas",
     w_tech: ["React JS", "APi", "Hooks", "HTML/CSS"],
-    w_demo_link: "https://tempath-demo.com",
-    w_repo_link: "https://github.com/enriquezss/tempath-repo",
+    w_demo_link: "https://joanhc.github.io/world.github.io/",
+    w_repo_link: "https://github.com/JoanHc/world.github.io/tree/main/world",
   },
   {
     w_no: 3,

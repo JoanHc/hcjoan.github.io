@@ -39,7 +39,10 @@ const Chatbot = () => {
     };
 
     try {
-      const response = await fetch(import.meta.env.VITE_API_URL, requesOptions);
+      const response = await fetch(
+        import.meta.env.VITE_GEMINI_API_KEY,
+        requesOptions,
+      );
       const data = await response.json();
 
       if (!response.ok) {

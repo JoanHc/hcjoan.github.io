@@ -13,19 +13,14 @@ const Services_Data = [
   {
     s_no: "03",
     s_name: "Social media",
-    s_desc: "Web development is the process of building, programming...",
+    s_desc:
+      "Encargo de planear contenido y hacer publicaciones en la diferenres redes sociales",
   },
   {
     s_no: "04",
     s_name: "Consumir APIs",
     s_desc:
       "Realizar solicitudes a servicios externos o internos para obtener, enviar o actualizar datos",
-  },
-
-  {
-    s_no: "05",
-    s_name: "Content writing",
-    s_desc: "Web development is the process of building, programming...",
   },
 ];
 
