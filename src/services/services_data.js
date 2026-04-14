@@ -14,7 +14,7 @@ const Services_Data = [
     s_no: "03",
     s_name: "Social media",
     s_desc:
-      "Encargo de planear contenido y hacer publicaciones en la diferenres redes sociales",
+      "Encargado de planear contenido y hacer publicaciones en la diferenres redes sociales",
   },
   {
     s_no: "04",
